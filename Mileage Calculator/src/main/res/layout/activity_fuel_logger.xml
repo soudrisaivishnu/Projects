@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FuelLogger">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/eddistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ENTER DISTANCE TRAVELLED                   "
+        android:inputType="numberDecimal" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM"/>
+
+</LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="numberDecimal"
+           android:id="@+id/edpetrol"
+           android:hint="ENTER QUANTITY OF FUEL                   " />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="LITERS"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/edamount"
+            android:hint="ENTER TOTAL COST OF FUEL              "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RUPEES"/>
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="31dp"
+        android:paddingBottom="50dp">
+
+        <Button
+            android:id="@+id/btncalculate"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="63dp"
+            android:text="CALCULATE"
+            app:layout_constraintEnd_toStartOf="@+id/btnsubmit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="58dp"
+            android:text="SUBMIT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btncalculate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.185" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:id="@+id/tvMileage"
+        android:hint="MILEAGE"
+        android:textSize="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:id="@+id/tvcostperliter"
+        android:hint="COST PER KM"
+        android:textSize="16dp"/>
+</LinearLayout>
