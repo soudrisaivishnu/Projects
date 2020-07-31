@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgmorning"
+            android:layout_width="361dp"
+            android:layout_height="213dp"
+            android:layout_marginBottom="548dp"
+            android:background="@mipmap/ic_morning"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:id="@+id/imgafternoon"
+                android:layout_width="368dp"
+                android:layout_height="227dp"
+                android:background="@mipmap/ic_afternoon"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="143dp" />
+
+            <ImageView
+                android:id="@+id/imgevening"
+                android:layout_width="370dp"
+                android:layout_height="184dp"
+                android:background="@mipmap/ic_evening"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="349dp" />
+
+            <ImageView
+                android:id="@+id/imgnight"
+                android:layout_width="379dp"
+                android:layout_height="200dp"
+                android:background="@mipmap/ic_launcher_foreground"
+                tools:layout_editor_absoluteX="15dp"
+                tools:layout_editor_absoluteY="517dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

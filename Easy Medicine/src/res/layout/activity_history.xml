@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".History" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_general" />
+
+        <ImageView
+            android:id="@+id/surgeryimg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:clickable="true"
+            android:src="@mipmap/ic_surgery" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:id="@+id/imgderm"
+            android:clickable="true"
+            android:src="@mipmap/ic_dermatology"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:id="@+id/imgpysc"
+            android:clickable="true"
+            android:src="@mipmap/ic_psychology"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:id="@+id/imgother"
+            android:clickable="true"
+            android:src="@mipmap/ic_others"/>
+
+
+    </LinearLayout>
+</ScrollView>
