@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicinemanager">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_dp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/dp_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".tutorial"></activity>
+        <activity android:name=".Alarm3" />
+        <activity android:name=".Alarm2" />
+
+        <receiver
+            android:name=".AlarmReciever3"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".AlarmReciever2"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".AlarmReciever1"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Alarm1" />
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".Alarm" />
+        <activity android:name=".Psychology" />
+        <activity android:name=".Others" />
+        <activity android:name=".Dermatology" />
+        <activity android:name=".Surgery" />
+        <activity android:name=".General" />
+        <activity android:name=".History" />
+        <activity android:name=".Upload" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
